@@ -1,43 +1,43 @@
-/* Reset some default spacing */
+/* Page background */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #f2f2f2;   /* Light grey background */
     text-align: center;
 }
 
 /* Header section */
 header {
-    background-color: #0a6ed1;
-    color: white;
-    padding: 50px 20px;
+    background-color: #f2f2f2;   /* Same light grey */
+    padding: 80px 20px;
 }
 
-/* Main title */
+/* Title */
 header h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 36px;
+    color: #011E41;   /* Dark corporate blue text */
 }
 
 /* Login Button */
 button {
-    background-color: #011E41;   /* Your requested color */
+    background-color: #011E41;   /* Your requested button color */
     color: white;
     border: none;
-    padding: 12px 30px;
+    padding: 14px 35px;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 25px;
-    transition: all 0.3s ease;
+    margin-top: 30px;
+    transition: 0.3s ease;
 }
 
-/* Hover Effect */
+/* Hover effect */
 button:hover {
     opacity: 0.85;
 }
 
-/* CDC Container */
+/* CDC container spacing */
 #cdc-container {
     margin-top: 40px;
 }

@@ -18,8 +18,8 @@ window.onload = function () {
         }
 
         gigya.accounts.showScreenSet({
-            screenSet: "Default-RegistrationLogin",
-            startScreen: "gigya-login-screen"
+            screenSet: "dentifier-First-Login",
+            startScreen: "gigya-identify-screen"
         });
 
     });

@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <title>SAP CDC Identifier First Demo</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        header {
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #011E41;
+            margin-bottom: 40px;
+        }
+
+        button {
+            background-color: #011E41;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
 
     <!-- SAP CDC SDK -->
     <script src="https://cdns.gigya.com/js/gigya.js?apikey=3_YcPOLtqNVZ3E4LH9m3teYcO6S8rikDQMIAy71GgmoCqDeJj3lPScSMZAX3L5vRiG"></script>
 
-    <!-- Your Script -->
-    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>SAP CDC Identifier First Demo</h1>
-        <button id="loginBtn">Login</button>
-    </header>
+<header>
+    <h1>SAP CDC Identifier First Demo</h1>
+
+    <button onclick="openCDC()">Login</button>
+</header>
+
+<script>
+    function openCDC() {
+        gigya.accounts.showScreenSet({
+            screenSet: "Default-RegistrationLogin"
+        });
+    }
+</script>
 
 </body>
 </html>

@@ -1,22 +1,43 @@
+/* Reset some default spacing */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f6f9;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    text-align: center;
 }
 
+/* Header section */
 header {
     background-color: #0a6ed1;
     color: white;
-    padding: 40px;
+    padding: 50px 20px;
 }
 
+/* Main title */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Login Button */
 button {
-    background: white;
-    color: #0a6ed1;
+    background-color: #011E41;   /* Your requested color */
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    opacity: 0.85;
+}
+
+/* CDC Container */
+#cdc-container {
+    margin-top: 40px;
 }

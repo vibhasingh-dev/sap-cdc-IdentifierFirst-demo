@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     const loginBtn = document.getElementById("loginBtn");
 
@@ -13,15 +13,13 @@ window.onload = function () {
 
         if (typeof gigya === "undefined") {
             console.error("Gigya SDK not loaded");
-            alert("Gigya not loaded");
             return;
         }
 
         gigya.accounts.showScreenSet({
-            screenSet: "dentifier-First-Login",
-            startScreen: "gigya-identify-screen"
+            screenSet: "Default-RegistrationLogin"
         });
 
     });
 
-};
+});
